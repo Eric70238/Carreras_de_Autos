@@ -12,13 +12,13 @@ class Player {
   if(this.index===1){
     this.positionX=width/2-100
   } else{
-    this.positionX=width72+100
+    this.positionX=width/2+100
   }
 
   database.ref(playerIndex).set({
     name:this.name,
     positionX: this.positionX,
-    positionY:this.positionY
+    positionY:this.positionY,
   });
 }
 
@@ -30,13 +30,13 @@ class Player {
     this.positionY=data.positionY;
   });
  }
-
- static getPlayersInfo(){
-  var playerInfoRef = database.ref("players");
-  playerInfoRef.on("value", data =>{
-    allplayers = data.val();
-  });
- }
+static getPlayersInfo() {
+    var playerInfoRef = database.ref("players");
+    playerInfoRef.on("value", data => {
+      allPlayers = data.val();
+    });
+  }
+  
 
  update(){
   var playerIndex = "players/player" + this.index;
@@ -53,7 +53,7 @@ class Player {
     });
   }
 
-  updateCount(){
+  updateCount(count){
     database.ref("/").update({
       playerCount: count
     });

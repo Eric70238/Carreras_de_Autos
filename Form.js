@@ -15,7 +15,9 @@ class Form {
 
   setElementsStyle() {
     this.titleImg.class("gameTitle");
-   
+    this.input.class("customInput");
+    this.playButton.class("customButton");
+    this.greeting.class("greeting");
   }
 
   hide() {
@@ -32,11 +34,12 @@ class Form {
       Hola, ${this.input.value()}
       </br>Espera a que se una otro jugador...`;
       this.greeting.html(message);
-      playerCount+=1;
-      player.name=this.input.value();
-      player.index=playerCount;
-      player.addPlayer();
-      player.getDistance()
+      playerCount += 1;
+      player.name = this.input.value();
+      player.index = playerCount;
+    player.addPlayer();//aaa
+      player.updateCount(playerCount); // BP
+     player.getDistance(); //aaa
     });
   }
 
