@@ -13,6 +13,7 @@ function preload() {
   track = loadImage("./assets/track.jpg");
   powerCoinsImage = loadImage("./assets/goldCoin.png");
   fuelImage = loadImage("./assets/fuel.png");
+  lifeImage=loadImage("./assets/life.png");
 }
 
 function setup() {
