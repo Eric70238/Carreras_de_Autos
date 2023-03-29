@@ -23,6 +23,10 @@ class Player {
     name:this.name,
     positionX: this.positionX,
     positionY:this.positionY,
+    score:this.score,
+    rank:this.rank,
+    life:this.life,
+    fuel:this.fuel
   });
 }
 
@@ -49,6 +53,8 @@ static getPlayersInfo() {
     positionY:this.positionY,
     score:this.score,
     rank:this.rank,
+    life:this.life,
+    fuel:this.fuel
   });
  }
 

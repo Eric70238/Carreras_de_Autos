@@ -73,3 +73,21 @@ canvas {
   border-radius: 30px;
   outline: none;
 }
+
+.resetText{
+  font-size: 25px
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-sherif;
+  text-align: center;
+  text-shadow: -1px 1px 0 #ff1744,
+                1px 1px 0 #ff1744,
+                1px -1px 0 #ff1744,
+                -1px -1px 0 #ff1744,
+}
+
+.leadersText{
+  font-size: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
