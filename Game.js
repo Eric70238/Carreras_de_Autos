@@ -78,7 +78,7 @@ class Game {
   addSprites(spriteGroup,numberOfSprites,spriteImage,scale, positions=[]){
     for (var i=0; i<numberOfSprites;i++){
       var x,y;
-      if(position.length>0){
+      if(positions.length>0){
         x = positions[i].x;
         y = positions[i].y;
         spriteImage=positions[i].image;
@@ -198,6 +198,7 @@ class Game {
       player.life+=15;
       collected.remove();
     }); 
+  }
 
   handleFuel(index){
     cars[index-1].overlap(fuels,function(collector, collected){
@@ -302,7 +303,7 @@ class Game {
 
   showRank(){
     swal({
-    title: `¡Impresionante!${"\n"}${player.rank}`.
+    title: `¡Impresionante!${"\n"}${player.rank}`,
     text: "Cruzaste la línea de meta con exito",
     imageUrl:
     "https://raw.githubusercontent.com/vishalgaddam873/p5-multiplayer-car-race-game/master/assets/cup.png",

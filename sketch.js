@@ -5,7 +5,7 @@ var form, player, playerCount, game;
 var allPlayers, car1, car2,fuels, powerCoins;
 var cars = [];
 var fuels,powerCoins,tools;
-var obstacle1Image, obstacle2Image;
+var obstacle1, obstacle2, obstacle1Image, obstacle2Image;
 var blastImage;
 
 function preload() {
